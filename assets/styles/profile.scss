@@ -1,0 +1,174 @@
+.sectionTitle {
+  display: flex;
+  margin-bottom: 80px;
+
+  .title {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .unicCode {
+    font-size: 20px;
+    font-weight: 600;
+    color: #a1a1a1;
+  }
+}
+
+.profile_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  .info {
+    width: 100%;
+
+    .infoTitle {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    table {
+      width: 100%;
+      text-align: left;
+      border: none;
+
+      tr {
+        border-radius: 30px;
+        border: none;
+
+        td {
+          margin-bottom: 40px;
+          padding-bottom: 40px;
+          border: none;
+        }
+
+        h1 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        span {
+          font-size: 20px;
+          font-weight: 400;
+        }
+
+        .btn_send {
+          font-size: 20px;
+          font-weight: 600;
+          padding: 10px 20px;
+          color: #fff;
+          background-color: #0092AD;
+          border-radius: 30px;
+        }
+      }
+    }
+
+    .delivery_addresses {
+      width: 1040px;
+      margin-top: 100px;
+      margin-bottom: 150px;
+
+      .deliveryTitle {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+
+      .basket_heder {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        padding: 0 30px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #a1a1a1;
+
+        .name {
+          width: 25%;
+        }
+
+        .number {
+          width: 25%;
+        }
+
+        .index_num {
+          width: 20%;
+        }
+
+        .adress {
+          width: 20%;
+        }
+      }
+
+      .basket_body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        padding: 30px;
+        background-color: #DFF1F4;
+        border-radius: 30px;
+        font-size: 24px;
+
+        .body_name {
+          width: 25%;
+          line-height: 20px;
+        }
+
+        .body_number {
+          width: 25%;
+          line-height: 20px;
+        }
+
+        .body_index_num {
+          width: 20%;
+          line-height: 20px;
+        }
+
+        .body_adress {
+          width: 25%;
+          line-height: 20px;
+        }
+
+        i.icon-dinkrement {
+          width: 5%;
+          font-size: 24px;
+
+          &:before {
+            margin-left: 50%;
+          }
+        }
+      }
+      .btn_new_address{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 14px 20px;
+        color: #fff;
+        background-color: #0092AD;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  .more {
+    width: 360px;
+    height: 160px;
+    padding: 40px 30px;
+    background: #DFF1F4;
+    border-radius: 30px;
+
+    h1 {
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 30px;
+
+      &.active {
+        color: #0092AD;
+        font-weight: 600;
+      }
+    }
+  }
+}

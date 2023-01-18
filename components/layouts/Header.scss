@@ -1,0 +1,419 @@
+@import "../../assets/styles/components/_vars.scss";
+@import "../../assets/styles/components/_mixins.scss";
+
+header {
+  padding-bottom: 100px;
+
+  .header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+
+    .logo {
+      cursor: pointer;
+    }
+
+    .search{
+      width: 440px;
+      // height: 60px;
+      display: flex;
+      align-items: center;
+      background-color: #E1E1E1;
+      border-radius: 30px;
+      padding: 15px 25px;
+      cursor: pointer;
+
+      i.icon-search {
+        font-size: 25px;
+        // margin-right: 10px;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        margin-right: 10px;
+      }
+    }
+
+    .item_res_wrapper{
+      width: 100%;
+      max-height: 70vh;
+      overflow-y: scroll;
+      padding: 10px;
+
+      a{
+        width: 100%;
+      }
+    }
+
+    .search_modal{
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(#000, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 99;
+
+
+
+      .search_res{
+        position: relative;
+        width: 680px;
+        background: #DFF1F4;
+        border-radius: 50px;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 99999999;
+
+        .icon-dinkrement{
+          position: absolute;
+          top: -40px;
+          right: -40px;
+          font-size: 40px;
+          color: #0092ad;
+          cursor: pointer;
+        }
+        
+        .modal_search{
+          display: flex;
+          width: 100%;
+          height: 60px;
+          background-color: #d1dbdc;
+          padding: 15px 30px;
+          margin-bottom: 30px;
+          border-radius: 30px;
+          font-size: 28px;
+          border: none;
+          outline: none;
+
+          input{
+            font-size: 22px;
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            margin-right: 10px;
+          }
+        }
+        
+
+        .item{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          background-color: #ffff;
+          border-radius: 0 30px;
+          padding: 15px 25px;
+          margin-bottom: 20px;
+          outline: 2px solid #f00;
+
+          .item_img{
+            // width: 60px;
+            height: 70px;
+            margin-right: 20px;
+
+            img{
+              width: 100%;
+              height: 100%;
+            }
+
+          }
+          .item_info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+          }
+
+          .info_top,
+          .info_bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          .info_top{
+            h3{
+              font-size: 26px;
+            }
+            h4{
+              color: #fff;
+              padding: 7px 14px;
+              background-color: #f00;
+              border-radius:0px 14px;
+            }
+          }
+
+          .info_bottom{
+            h3{
+              color: #0092ad;
+              font-size: 23px;
+            }
+            h4{
+              text-decoration: line-through;
+              color: #a1a1a1;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+
+
+    .back_call {
+      display: flex;
+      align-items: center;
+      padding: 10px 30px;
+      border-radius: 30px;
+      border: 3px solid #0092ad;
+      cursor: pointer;
+
+      span {
+        font-size: 20px;
+        font-weight: 400;
+        color: #0092ad;
+      }
+    }
+
+    .phone_number {
+      font-size: 25px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .back_call_modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(#000, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+
+      .modal_card {
+        position: relative;
+        width: 680px;
+        background: #DFF1F4;
+        border-radius: 50px;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .closeCard {
+          position: absolute;
+          top: -50px;
+          right: -50px;
+          font-size: 50px;
+          color: #0092ad;
+          cursor: pointer;
+        }
+
+        .phoneModal,
+        .contactModal {
+          width: 100%;
+          height: 60px;
+          background-color: #d1dbdc;
+          padding: 15px 30px;
+          margin-bottom: 30px;
+          border-radius: 30px;
+          font-size: 28px;
+          border: none;
+          outline: none;
+
+          &::placeholder {
+            font-size: 25px;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            color: #000;
+          }
+
+        }
+        .btnModal {
+          padding: 20px 70px;
+          background: #3FC2CD;
+          border-radius: 20px;
+          font-weight: 500;
+          font-size: 20px;
+          color: #FFFFFF;
+        }
+
+        .back_call_modal_title {
+          align-items: start;
+          font-size: 30px;
+          font-weight: 600;
+          margin-bottom: 30px;
+        }
+
+        .back_call_modal_text {
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+
+        .back_call_modal_input {
+          width: 100%;
+          height: 50px;
+          border-radius: 30px;
+          border: 3px solid #0092ad;
+          padding: 0 25px;
+          margin-bottom: 30px;
+          font-size: 20px;
+          font-weight: 400;
+        }
+
+        .back_call_modal_button {
+          width: 100%;
+          height: 50px;
+          border-radius: 30px;
+          border: 3px solid #0092ad;
+          background-color: #0092ad;
+          color: #fff;
+          font-size: 20px;
+          font-weight: 400;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .header_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+
+    .menu {
+      ul.manu_list {
+        display: flex;
+        align-items: center;
+        margin: 0 !important;
+
+        li.menu_item {
+          font-size: 25px;
+          font-weight: 400;
+          margin-right: 30px;
+          cursor: pointer;
+          letter-spacing: 2px;
+
+        }
+
+        .nuxt-link-exact-active.nuxt-link-active {
+          color: #0092ad;
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .language {
+        ul {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 0 !important;
+
+          li.lang {
+            font-size: 25px;
+            font-weight: 500;
+            cursor: pointer;
+            color: #a2a2a2;
+
+            &._active {
+              color: #3FC2CD;
+            }
+          }
+        }
+      }
+
+      .save {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 35px;
+          left: 16px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #3FC2CD;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 35px;
+          left: 30px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #3FC2CD;
+        }
+
+        i {
+          font-size: 45px;
+          cursor: pointer;
+        }
+
+        span {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #3FC2CD;
+          color: $white;
+          position: absolute;
+          font-size: 20px;
+          font-weight: 700;
+          top: -7px;
+          right: -12px;
+        }
+      }
+
+      .my_prof {
+        i {
+          font-size: 45px;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 12px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 6px solid #3FC2CD;
+            background: transparent;
+            z-index: 2;
+          }
+        }
+
+
+
+      }
+    }
+  }
+}

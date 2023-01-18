@@ -1,0 +1,245 @@
+.wrapper {
+  display: flex;
+  gap: 40px;
+
+  .left {
+    width: 320px;
+
+    //   .fade-enter-active,
+    //   .fade-leave-active {
+    //   // transition: opacity 0.5s ease;
+    //   transition: 0.3s;
+    // }
+
+    // .fade-enter-from,
+    // .fade-leave-to {
+    //   transform: translateY(20px);
+    //   opacity: 0;
+    // }
+
+    // .fade-enter-active-from {
+    //   transition: all 0.3s ease-out;
+    // }
+
+    // .fade-leave-active {
+    //   transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+    // }
+
+    // .fade-enter-from,
+    // .fade-leave-to {
+    //   transform: translateY(-20px);
+    //   opacity: 0;
+    // }
+
+    i.icon-chevron {
+      font-size: 12px;
+      transition: 0.3s;
+
+    }
+
+    .section_title {
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+
+    .filter_title {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+
+    .filter_block {
+      padding-top: 20px;
+
+      .filter_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+        cursor: pointer;
+
+      }
+
+      h5 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .atribut {
+        border-bottom: 3px solid #c4c4c4;
+
+        input.range {
+          width: 100%;
+          height: 10px;
+        }
+
+        label {
+          width: 100%;
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 20px;
+          display: block;
+
+          input[type="checkbox"] {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+            border-radius: 3px;
+            background-color: transparent;
+            appearance: none;
+            -webkit-appearance: none;
+            border: 1px solid #000;
+          }
+
+          input[type="checkbox"]:checked {
+            border: 1px solid #0092AD;
+          }
+
+          input[type=checkbox]::after {
+            position: absolute;
+            bottom: 4px;
+            left: 3px;
+            font-weight: 900;
+            content: "\e902";
+            font-family: 'icomoon';
+            font-size: 18px;
+            color: #000;
+            display: none;
+          }
+
+          input[type=checkbox]:checked::after {
+            display: block;
+            color: #0092AD;
+          }
+        }
+
+        .range_value {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          span {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 20px;
+          }
+        }
+
+        .range_price {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 30px;
+
+          .min,
+          .max {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            span {
+              margin-right: 10px;
+              font-size: 20px;
+              font-weight: 400;
+
+            }
+
+            span.data {
+              font-size: 20px;
+              font-weight: 800;
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+
+  .right {
+    width: calc(100% - 320px);
+
+    .filter_resault {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .result {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px 20px;
+
+        .item {
+          padding: 6px 12px;
+          background: #ebebeb;
+          border-radius: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-weight: 400;
+          font-size: 15px;
+          color: #6a6a6a;
+          gap: 15px;
+          cursor: pointer;
+        }
+
+
+      }
+
+      .filter_button {
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 15px;
+        margin-right: 20px;
+        background: #3FC2CD;
+        border-radius: 10px;
+        cursor: pointer;
+        i{
+          font-size: 20px;
+        }
+      }
+    }
+
+
+
+
+    .contend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 30px 0 100px;
+    }
+
+    .paginations{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 100px 0;
+      gap: 15px;
+    }
+
+    .btn_pagination {
+      width: 45px;
+      height: 45px;
+      background: #A1A1A1;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 30px;
+      font-family: 'Montserrat';
+      color: #545454;
+    }
+  }
+}

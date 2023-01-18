@@ -1,0 +1,255 @@
+.sectionTitle {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.formation_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 150px;
+
+  .left {
+    .farmation_info {
+      margin-bottom: 50px;
+
+      .details_info {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+
+      .details_edit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .details {
+          font-size: 25px;
+          font-weight: 700;
+        }
+
+        .detail_edit {
+          font-size: 20px;
+          font-weight: 400;
+          color: #0092ad;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .address {
+      .section_address_title {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 25px;
+      }
+
+      .address_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        gap: 40px;
+        
+
+        .address_title {
+          font-size: 20px;
+          font-weight: 400;
+          color: #A1A1A1;
+
+          &._active {
+            color: #0092ad;
+          }
+        }
+
+        .address_edit {
+          font-size: 20px;
+          font-weight: 400;
+          color: #0092AD;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .payment {
+      .payment_title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+
+      .payment_status {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        gap: 20px;
+
+
+        input[type="radio" i] {
+          width: 20px;
+          height: 20px;
+        }
+
+        label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+
+    }
+
+    .plastic_card {
+      width: 360px;
+      height: 174px;
+      background: #DFF1F4;
+      border-radius: 25px;
+      padding: 30px 20px;
+      margin-bottom: 50px;
+
+      .plastic_unic_id {
+        width: 100%;
+        margin-bottom: 30px;
+        border: none;
+        font-size: 20px;
+        font-weight: 400;
+        border-bottom: 1px solid #A2A2A2;
+        padding: 5px 15px 5px 15px;
+        background-color: transparent;
+        letter-spacing: 3px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .month_num {
+        display: flex;
+        gap: 15px;
+
+
+        .month,
+        .pass {
+          width: 85px;
+          border: none;
+          border-bottom: 1px solid #A2A2A2;
+          padding: 0 5px 5px 5px;
+          background-color: transparent;
+          font-size: 20px;
+          font-weight: 400;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .visa_card {
+          width: auto;
+          height: auto;
+          margin-left: 50px;
+
+        }
+      }
+
+    }
+
+    .pay {
+      font-size: 25px;
+      font-weight: 400;
+      padding: 15px 80px;
+      color: #fff;
+      background: #0092AD;
+      border-radius: 30px;
+
+    }
+
+    // edit-formation page
+
+    .data_title{
+      font-size: 35px;
+      font-weight: 600;
+      margin-bottom: 50px;
+    }
+ 
+    .input_data {
+      width: 780px;
+      margin-bottom: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      grid-gap: 40px 50px;
+      gap: 50px 20px;
+
+      .my_data_input{
+        width: 380px;
+        padding: 1px 5px;
+        border: none;
+        outline: none;
+        border-bottom: 3px solid #C4C4C4;
+        font-size: 25px;
+        font-weight: 400;
+      }
+    }
+
+  }
+
+  .right {
+    .order_list {
+      padding: 50px;
+      background: #DFF1F4;
+      border-radius: 30px;
+
+      .order_title {
+        font-size: 25px;
+        font-weight: 700;
+      }
+
+      .order_item {
+        width: 480px;
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        margin-top: 30px;
+
+        .order_img {
+          width: 90px;
+          height: 65px;
+
+          img {
+            height: 100%;
+          }
+        }
+
+        .order_titles {
+          .order_name {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 15px;
+          }
+
+          .order_info {
+            font-size: 15px;
+            font-weight: 300;
+            color: #a1a1a1;
+            line-height: 18px;
+          }
+        }
+
+        .delete_item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px;
+          color: #A1A1A1;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
